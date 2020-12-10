@@ -208,7 +208,7 @@ ST_AsGDALRaster(ST_Union(rast), 'GTiff', ARRAY['COMPRESS=DEFLATE', 'PREDICTOR=2'
 ) AS loid
 FROM wladowska.porto_ndvi;
 Zad 30
-SELECT lo_export(loid, 'D:\myraster.tiff') --> Save the file in a place where the user postgres have access. In windows a flash drive usualy works fine.
+SELECT lo_export(loid, 'C:\Users\gwladowska\Desktop\BazyDanychPrzestrzennych\cw5\raster.tiff')
 FROM tmp_out;
 Zad 31
 SELECT lo_unlink(loid)
